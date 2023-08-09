@@ -77,7 +77,7 @@ data_train_array = scaler.fit_transform(data_train)
 
 #load my model
 
-model = load_model('keras_model.h5')
+model = load_model('keras_model.keras')
 
 
 
