@@ -129,7 +129,7 @@ x_test, y_test = np.array(x_test),np.array(y_test)
 
 y_predict = model.predict(x_test)
 y_predict = np.array(y_predict)
-y_predict_inverse = minmax_scaler_layer.inverse_transform(y_predict)
+#y_predict_inverse = minmax_scaler_layer.inverse_transform(y_predict)
 tf.config.run_functions_eagerly(True)
 #scalling factor
 #scaler = scaler.scale_
@@ -143,7 +143,7 @@ tf.config.run_functions_eagerly(True)
 st.subheader('Prediction V/S Original')
 fig2 = plt.figure(figsize=(12,6))
 plt.plot(y_test, 'b' ,label='Original Price')
-plt.plot(y_predict_inverse, 'r' ,label='Predicted Price')
+plt.plot(y_predict, 'r' ,label='Predicted Price')
 plt.xlabel('Time')
 plt.ylabel('Price')
 plt.legend()
