@@ -105,7 +105,7 @@ data_scaled_keras = minmax_scaler_layer(data_train)
 
 #load my model
 
-model = load_model('keras_model.h5')
+model = load_model('keras_model.keras')
 
 
 
