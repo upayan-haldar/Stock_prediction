@@ -68,7 +68,7 @@ data_test = pd.DataFrame(df['Close'][int(len(df)*0.70):int(len(df))])
 
 #normalization of data
 
-from sklearn.preprocessing import MinMaxScaler
+from keras.preprocessing import MinMaxScaler
 scaler = MinMaxScaler(feature_range=(0,1))
 
 #training set normalization
