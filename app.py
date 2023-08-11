@@ -113,7 +113,7 @@ model = load_model('keras_model.h5')
 past_100_days = data_train.tail(100)
 final_df = pd.concat([past_100_days, data_test], ignore_index=True)
 
-
+minmax_scaler_layer.adapt(final_df)
 input_data = minmax_scaler_layer(final_df)
 
 x_test =[]
